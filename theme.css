@@ -1,0 +1,106 @@
+:root {
+    --background-color: #fff;
+    --text-color: #121416;
+    --text-color-subdued: #777;
+    --link-color: #7e00ff;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #212a2e;
+        --text-color: #aeff89;
+        --text-color-subdued: #eee;
+        --link-color: #bf0;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #fff;
+        --text-color: #121416;
+        --text-color-subdued: #777;
+        --link-color: #7e00ff;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+body {
+    font-size: 18px;
+    background-color: var(--background-color);
+}
+a:hover,
+a:active,
+.blog-entry .kudos-btn:hover,
+.blog-entry .kudos-btn:active,
+.profile .friends .person p {
+    color: var(--link-color);
+}
+main,
+.profile {
+    background-color: var(--background-color);
+}
+.profile .left,
+.profile .right {
+    font-family: var(--font-stack) !important;
+    color: var(--text-color) !important;
+}
+.profile h1 {
+    font-family: var(--font-stack) !important;
+    color: var(--text-color) !important;
+    font-size: 1.2rem;
+}
+.left a,
+.right a {
+    color: var(--link-color) !important;
+}
+.details-table td:first-child {
+    color: var(--text-color-subdued);
+    background: none;
+}
+.details-table td,
+.comments-table td:first-child,
+.music-table td:first-child,
+.comments-table td,
+.music-table td {
+    background: none;
+}
+.profile .contact,
+.profile .url-info,
+.profile .table-section {
+    border: 2px solid var(--text-color);
+}
+.details-table td p,
+ul:not(nav .links):not(footer .links) li {
+    font-size: 0.9rem;
+}
+.profile .contact .heading,
+.profile .url-info .heading,
+.profile .table-section .heading {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 0 0 0.5em 0;
+}
+.profile .contact .inner,
+.profile .url-info .inner,
+.profile .table-section .inner {
+    font-size: 0.8rem;
+}
+.profile .blurbs .heading,
+.profile .friends .heading {
+    color: var(--text-color);
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 0 0 0.5em 0;
+    border: 1px solid var(--text-color);
+    background-color: var(--background-color);
+    box-shadow: 5px 5px 0px 0px var(--text-color);
+}
+.profile .blurbs .section h4 {
+    color: var(--text-color);
+}
+.count {
+    color: var(--text-color);
+}
