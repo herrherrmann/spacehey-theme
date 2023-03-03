@@ -70,6 +70,9 @@ main,
 .profile .table-section {
     border: 2px solid var(--text-color);
 }
+ul {
+    margin: 0;
+}
 .details-table td p,
 ul:not(nav .links):not(footer .links) li {
     font-size: 0.9rem;
